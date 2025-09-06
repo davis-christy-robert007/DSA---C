@@ -131,4 +131,4 @@ for(int h=0;h<s;h++){
 }
 
 return 0;
-}spa
+}
