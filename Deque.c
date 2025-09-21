@@ -10,7 +10,7 @@ void insertFront(int ITEM) {
         printf("Cannot insert at front. No space.\n");
         return;
     }
-    if (FRONT == -1) { // empty deque
+    if (FRONT == -1) { 
         FRONT = REAR = 0;
     } else {
         FRONT--;
@@ -24,7 +24,7 @@ void insertRear(int ITEM) {
         printf("Cannot insert at rear. Deque full.\n");
         return;
     }
-    if (REAR == -1) { // empty deque
+    if (REAR == -1) { 
         FRONT = REAR = 0;
     } else {
         REAR++;
@@ -40,7 +40,7 @@ void deleteFront() {
     }
     printf("Deleted %d from front.\n", Q[FRONT]);
     FRONT++;
-    if (FRONT > REAR) {  // reset when empty
+    if (FRONT > REAR) {  
         FRONT = REAR = -1;
     }
 }
@@ -52,7 +52,7 @@ void deleteRear() {
     }
     printf("Deleted %d from rear.\n", Q[REAR]);
     REAR--;
-    if (REAR < FRONT) {  // reset when empty
+    if (REAR < FRONT) {  
         FRONT = REAR = -1;
     }
 }
